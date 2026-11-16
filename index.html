@@ -1,0 +1,958 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description" content="Discover extraordinary experiences with EVENTORA. Explore exclusive events, concerts, business experiences and premium entertainment.">
+
+    <meta name="theme-color" content="#101014">
+
+    <title>EVENTORA | Experience More</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Stylesheet will be connected in Stage 04 -->
+    <link rel="stylesheet" href="styles.css">
+
+</head>
+
+<body>
+
+    <!-- =================================
+         HEADER
+    ================================== -->
+
+    <header class="site-header">
+
+        <div class="container header-container">
+
+            <a href="index.html" class="brand-logo">
+                EVENTORA<span>.</span>
+            </a>
+
+            <nav class="main-navigation" id="main-navigation">
+
+                <a href="#home" class="nav-link active">
+                    Home
+                </a>
+
+                <a href="#featured-events" class="nav-link">
+                    Discover
+                </a>
+
+                <a href="#categories" class="nav-link">
+                    Categories
+                </a>
+
+                <a href="#about" class="nav-link">
+                    About
+                </a>
+
+                <a href="#contact" class="nav-link">
+                    Contact
+                </a>
+
+            </nav>
+
+            <div class="header-actions">
+
+                <a href="#featured-events" class="header-cta">
+                    Explore Events
+                    <span>↗</span>
+                </a>
+
+                <button
+                    class="menu-toggle"
+                    id="menu-toggle"
+                    aria-label="Toggle navigation"
+                    aria-expanded="false"
+                    aria-controls="main-navigation"
+                    type="button">
+
+                    <span></span>
+                    <span></span>
+                    <span></span>
+
+                </button>
+
+            </div>
+
+        </div>
+
+    </header>
+
+
+    <main>
+
+        <!-- =================================
+             HERO SECTION
+        ================================== -->
+
+        <section class="hero-section" id="home">
+
+            <div class="hero-background">
+
+                <img
+                    src="https://images.unsplash.com/photo-1459749411175-04bf5292ceea?auto=format&fit=crop&w=2000&q=85"
+                    alt="Spectacular live music event with illuminated stage">
+
+            </div>
+
+            <div class="hero-overlay"></div>
+
+            <div class="container hero-container">
+
+                <div class="hero-content">
+
+                    <span class="eyebrow hero-eyebrow">
+                        DISCOVER THE EXTRAORDINARY
+                    </span>
+
+                    <h1>
+                        Experience More.
+                        <span>Make Every Moment Count.</span>
+                    </h1>
+
+                    <p class="hero-description">
+                        From unforgettable live performances to exclusive
+                        experiences, discover extraordinary events
+                        worth remembering.
+                    </p>
+
+                    <div class="hero-actions">
+
+                        <a href="#featured-events" class="btn btn-primary">
+                            Discover Events
+                            <span>↗</span>
+                        </a>
+
+                        <a href="#categories" class="btn btn-outline">
+                            Explore Experiences
+                        </a>
+
+                    </div>
+
+                </div>
+
+
+                <div class="hero-bottom">
+
+                    <div class="hero-location">
+                        <span class="location-indicator"></span>
+                        EXPERIENCES WITHOUT LIMITS
+                    </div>
+
+                    <div class="hero-scroll">
+                        SCROLL TO DISCOVER ↓
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =================================
+             EVENT SEARCH
+        ================================== -->
+
+        <section class="search-section">
+
+            <div class="container">
+
+                <div class="search-panel">
+
+                    <div class="search-heading">
+
+                        <span class="eyebrow">
+                            FIND YOUR NEXT EXPERIENCE
+                        </span>
+
+                        <h2>
+                            What are you looking for?
+                        </h2>
+
+                    </div>
+
+
+                    <form
+                        class="event-search-form"
+                        id="event-search-form">
+
+                        <div class="search-field">
+
+                            <label for="event-location">
+                                Location
+                            </label>
+
+                            <select id="event-location" name="location">
+
+                                <option value="">Any location</option>
+                                <option value="johannesburg">Johannesburg</option>
+                                <option value="cape-town">Cape Town</option>
+                                <option value="durban">Durban</option>
+                                <option value="pretoria">Pretoria</option>
+
+                            </select>
+
+                        </div>
+
+
+                        <div class="search-field">
+
+                            <label for="event-category">
+                                Category
+                            </label>
+
+                            <select id="event-category" name="category">
+
+                                <option value="">All categories</option>
+                                <option value="music">Music & Concerts</option>
+                                <option value="business">Business</option>
+                                <option value="lifestyle">Lifestyle</option>
+                                <option value="sports">Sports</option>
+                                <option value="food">Food & Dining</option>
+
+                            </select>
+
+                        </div>
+
+
+                        <div class="search-field">
+
+                            <label for="event-date">
+                                When
+                            </label>
+
+                            <input
+                                type="date"
+                                id="event-date"
+                                name="date">
+
+                        </div>
+
+
+                        <button
+                            type="submit"
+                            class="search-button">
+
+                            Search Events
+                            <span>→</span>
+
+                        </button>
+
+                    </form>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =================================
+             FEATURED EVENTS
+        ================================== -->
+
+        <section class="featured-section" id="featured-events">
+
+            <div class="container">
+
+                <div class="section-heading">
+
+                    <div class="section-heading-content">
+
+                        <span class="eyebrow">
+                            THE EVENTORA SELECTION
+                        </span>
+
+                        <h2>
+                            Experiences Worth
+                            <span>Showing Up For.</span>
+                        </h2>
+
+                        <p>
+                            Discover exceptional experiences
+                            happening around you.
+                        </p>
+
+                    </div>
+
+                    <a href="#categories" class="text-link">
+                        Explore Categories →
+                    </a>
+
+                </div>
+
+
+                <div class="events-grid">
+
+
+                    <!-- EVENT 01 -->
+
+                    <article class="event-card">
+
+                        <a href="event-details.html" class="event-image">
+
+                            <img
+                                src="https://images.unsplash.com/photo-1470229722913-7c0e2dbbafd3?auto=format&fit=crop&w=900&q=85"
+                                alt="Electronic music festival">
+
+                            <span class="event-tag">
+                                FEATURED
+                            </span>
+
+                            <span class="event-date">
+                                21 NOV
+                            </span>
+
+                        </a>
+
+
+                        <div class="event-information">
+
+                            <div class="event-meta">
+                                <span>MUSIC & NIGHTLIFE</span>
+                                <span>JOHANNESBURG</span>
+                            </div>
+
+                            <h3>
+                                Electric Nights Festival
+                            </h3>
+
+                            <p>
+                                An unforgettable night of electronic
+                                music, incredible production and energy.
+                            </p>
+
+                            <div class="event-card-footer">
+
+                                <div class="event-price">
+                                    <small>Starting from</small>
+                                    <strong>R450</strong>
+                                </div>
+
+                                <a href="event-details.html"
+                                   class="event-link"
+                                   aria-label="View Electric Nights Festival">
+                                    →
+                                </a>
+
+                            </div>
+
+                        </div>
+
+                    </article>
+
+
+                    <!-- EVENT 02 -->
+
+                    <article class="event-card">
+
+                        <a href="event-details.html" class="event-image">
+
+                            <img
+                                src="https://images.unsplash.com/photo-1511578314322-379afb476865?auto=format&fit=crop&w=900&q=85"
+                                alt="Professional business conference">
+
+                            <span class="event-date">
+                                28 NOV
+                            </span>
+
+                        </a>
+
+
+                        <div class="event-information">
+
+                            <div class="event-meta">
+                                <span>BUSINESS</span>
+                                <span>CAPE TOWN</span>
+                            </div>
+
+                            <h3>
+                                The Future Forward Summit
+                            </h3>
+
+                            <p>
+                                Connect with ambitious professionals,
+                                innovators and industry leaders.
+                            </p>
+
+                            <div class="event-card-footer">
+
+                                <div class="event-price">
+                                    <small>Starting from</small>
+                                    <strong>R850</strong>
+                                </div>
+
+                                <a href="event-details.html"
+                                   class="event-link"
+                                   aria-label="View Future Forward Summit">
+                                    →
+                                </a>
+
+                            </div>
+
+                        </div>
+
+                    </article>
+
+
+                    <!-- EVENT 03 -->
+
+                    <article class="event-card">
+
+                        <a href="event-details.html" class="event-image">
+
+                            <img
+                                src="https://images.unsplash.com/photo-1516450360452-9312f5e86fc7?auto=format&fit=crop&w=900&q=85"
+                                alt="Elegant live entertainment experience">
+
+                            <span class="event-tag event-tag-gold">
+                                EXCLUSIVE
+                            </span>
+
+                            <span class="event-date">
+                                05 DEC
+                            </span>
+
+                        </a>
+
+
+                        <div class="event-information">
+
+                            <div class="event-meta">
+                                <span>LIFESTYLE</span>
+                                <span>DURBAN</span>
+                            </div>
+
+                            <h3>
+                                The Midnight Experience
+                            </h3>
+
+                            <p>
+                                An exclusive evening combining
+                                entertainment, elegance and culture.
+                            </p>
+
+                            <div class="event-card-footer">
+
+                                <div class="event-price">
+                                    <small>Starting from</small>
+                                    <strong>R650</strong>
+                                </div>
+
+                                <a href="event-details.html"
+                                   class="event-link"
+                                   aria-label="View The Midnight Experience">
+                                    →
+                                </a>
+
+                            </div>
+
+                        </div>
+
+                    </article>
+
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =================================
+             EVENT CATEGORIES
+        ================================== -->
+
+        <section class="categories-section" id="categories">
+
+            <div class="container">
+
+                <div class="section-heading">
+
+                    <div class="section-heading-content">
+
+                        <span class="eyebrow">
+                            EXPLORE YOUR INTERESTS
+                        </span>
+
+                        <h2>
+                            Find Your
+                            <span>Kind of Extraordinary.</span>
+                        </h2>
+
+                    </div>
+
+                </div>
+
+
+                <div class="categories-grid">
+
+
+                    <a href="#featured-events"
+                       class="category-card category-music">
+
+                        <span class="category-number">01</span>
+
+                        <div class="category-content">
+
+                            <h3>Music & Concerts</h3>
+
+                            <span>Explore Events →</span>
+
+                        </div>
+
+                    </a>
+
+
+                    <a href="#featured-events"
+                       class="category-card category-business">
+
+                        <span class="category-number">02</span>
+
+                        <div class="category-content">
+
+                            <h3>Business & Networking</h3>
+
+                            <span>Explore Events →</span>
+
+                        </div>
+
+                    </a>
+
+
+                    <a href="#featured-events"
+                       class="category-card category-lifestyle">
+
+                        <span class="category-number">03</span>
+
+                        <div class="category-content">
+
+                            <h3>Lifestyle & Culture</h3>
+
+                            <span>Explore Events →</span>
+
+                        </div>
+
+                    </a>
+
+
+                    <a href="#featured-events"
+                       class="category-card category-sports">
+
+                        <span class="category-number">04</span>
+
+                        <div class="category-content">
+
+                            <h3>Sports & Adventure</h3>
+
+                            <span>Explore Events →</span>
+
+                        </div>
+
+                    </a>
+
+
+                    <a href="#featured-events"
+                       class="category-card category-dining">
+
+                        <span class="category-number">05</span>
+
+                        <div class="category-content">
+
+                            <h3>Food & Dining</h3>
+
+                            <span>Explore Events →</span>
+
+                        </div>
+
+                    </a>
+
+
+                    <a href="#featured-events"
+                       class="category-card category-experiences">
+
+                        <span class="category-number">06</span>
+
+                        <div class="category-content">
+
+                            <h3>Unique Experiences</h3>
+
+                            <span>Explore Events →</span>
+
+                        </div>
+
+                    </a>
+
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =================================
+             WHY EVENTORA
+        ================================== -->
+
+        <section class="about-section" id="about">
+
+            <div class="container about-container">
+
+                <div class="about-visual">
+
+                    <img
+                        src="https://images.unsplash.com/photo-1501386761578-eac5c94b800a?auto=format&fit=crop&w=1200&q=85"
+                        alt="Crowd enjoying an unforgettable live event">
+
+                    <div class="about-image-caption">
+
+                        <span>MORE THAN AN EVENT.</span>
+
+                        <strong>
+                            A Moment That Stays.
+                        </strong>
+
+                    </div>
+
+                </div>
+
+
+                <div class="about-content">
+
+                    <span class="eyebrow">
+                        THE EVENTORA DIFFERENCE
+                    </span>
+
+                    <h2>
+                        Life Happens
+                        <span>Outside Ordinary.</span>
+                    </h2>
+
+                    <p>
+                        We believe the best moments happen when
+                        people come together.
+
+                        EVENTORA makes discovering exceptional
+                        experiences easier, bringing extraordinary
+                        events and unforgettable memories within reach.
+                    </p>
+
+
+                    <div class="about-benefits">
+
+                        <div class="benefit-item">
+
+                            <span class="benefit-icon">✦</span>
+
+                            <div>
+
+                                <h3>Curated Experiences</h3>
+
+                                <p>
+                                    Discover carefully selected
+                                    events worth your time.
+                                </p>
+
+                            </div>
+
+                        </div>
+
+
+                        <div class="benefit-item">
+
+                            <span class="benefit-icon">◇</span>
+
+                            <div>
+
+                                <h3>Simple Discovery</h3>
+
+                                <p>
+                                    Find experiences that match
+                                    your interests and lifestyle.
+                                </p>
+
+                            </div>
+
+                        </div>
+
+
+                        <div class="benefit-item">
+
+                            <span class="benefit-icon">✧</span>
+
+                            <div>
+
+                                <h3>Seamless Booking</h3>
+
+                                <p>
+                                    Enjoy a straightforward journey
+                                    from discovery to booking.
+                                </p>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
+                    <a href="#featured-events" class="btn btn-primary">
+                        Explore Experiences
+                        <span>↗</span>
+                    </a>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =================================
+             TESTIMONIALS
+        ================================== -->
+
+        <section class="testimonials-section">
+
+            <div class="container">
+
+                <div class="section-heading centered-heading">
+
+                    <span class="eyebrow">
+                        EXPERIENCES THAT SPEAK
+                    </span>
+
+                    <h2>
+                        Moments Worth
+                        <span>Talking About.</span>
+                    </h2>
+
+                </div>
+
+
+                <div class="testimonials-grid">
+
+
+                    <article class="testimonial-card">
+
+                        <div class="testimonial-stars">
+                            ★★★★★
+                        </div>
+
+                        <blockquote>
+                            "Finding exciting events has never
+                            felt this effortless. EVENTORA makes
+                            discovering something different easy."
+                        </blockquote>
+
+                        <div class="testimonial-author">
+
+                            <div class="author-avatar">TM</div>
+
+                            <div>
+                                <strong>Thando M.</strong>
+                                <span>Event Enthusiast</span>
+                            </div>
+
+                        </div>
+
+                    </article>
+
+
+                    <article class="testimonial-card">
+
+                        <div class="testimonial-stars">
+                            ★★★★★
+                        </div>
+
+                        <blockquote>
+                            "A refreshing way to discover experiences.
+                            The presentation and event selection
+                            make everything feel premium."
+                        </blockquote>
+
+                        <div class="testimonial-author">
+
+                            <div class="author-avatar">SL</div>
+
+                            <div>
+                                <strong>Sarah L.</strong>
+                                <span>Professional</span>
+                            </div>
+
+                        </div>
+
+                    </article>
+
+
+                    <article class="testimonial-card">
+
+                        <div class="testimonial-stars">
+                            ★★★★★
+                        </div>
+
+                        <blockquote>
+                            "From discovering an event to exploring
+                            the booking options, everything feels
+                            clear and straightforward."
+                        </blockquote>
+
+                        <div class="testimonial-author">
+
+                            <div class="author-avatar">JK</div>
+
+                            <div>
+                                <strong>James K.</strong>
+                                <span>Experience Seeker</span>
+                            </div>
+
+                        </div>
+
+                    </article>
+
+
+                </div>
+
+                <p class="testimonial-disclaimer">
+                    Illustrative testimonials for this fictional brand concept.
+                </p>
+
+            </div>
+
+        </section>
+
+
+        <!-- =================================
+             FINAL CTA
+        ================================== -->
+
+        <section class="final-cta-section">
+
+            <div class="final-cta-background"></div>
+
+            <div class="container final-cta-container">
+
+                <span class="eyebrow">
+                    YOUR NEXT EXPERIENCE STARTS HERE
+                </span>
+
+                <h2>
+                    Make Room For
+                    <span>Something Extraordinary.</span>
+                </h2>
+
+                <p>
+                    Discover new experiences.
+                    Create unforgettable memories.
+                    Make every moment count.
+                </p>
+
+                <a href="#featured-events" class="btn btn-primary">
+                    Find Your Next Experience
+                    <span>↗</span>
+                </a>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- =================================
+         FOOTER
+    ================================== -->
+
+    <footer class="site-footer" id="contact">
+
+        <div class="container">
+
+            <div class="footer-main">
+
+                <div class="footer-brand">
+
+                    <a href="index.html" class="brand-logo">
+                        EVENTORA<span>.</span>
+                    </a>
+
+                    <p>
+                        Discover extraordinary experiences.
+                        Make every moment count.
+                    </p>
+
+                </div>
+
+
+                <div class="footer-column">
+
+                    <h3>Discover</h3>
+
+                    <a href="#featured-events">Featured Events</a>
+                    <a href="#categories">Categories</a>
+                    <a href="#about">About EVENTORA</a>
+
+                </div>
+
+
+                <div class="footer-column">
+
+                    <h3>Experiences</h3>
+
+                    <a href="#featured-events">Music & Concerts</a>
+                    <a href="#featured-events">Business Events</a>
+                    <a href="#featured-events">Lifestyle</a>
+
+                </div>
+
+
+                <div class="footer-column">
+
+                    <h3>Get In Touch</h3>
+
+                    <a href="mailto:hello@eventora.example">
+                        Email Us
+                    </a>
+
+                    <a href="#home">
+                        Back to Top ↑
+                    </a>
+
+                </div>
+
+            </div>
+
+
+            <div class="footer-bottom">
+
+                <p>
+                    © 2026 EVENTORA. All rights reserved.
+                </p>
+
+                <span>
+                    MADE FOR EXTRAORDINARY MOMENTS.
+                </span>
+
+            </div>
+
+        </div>
+
+    </footer>
+
+
+    <!-- JavaScript will be connected in Stage 05 -->
+    <script src="script.js"></script>
+
+</body>
+
+</html>
